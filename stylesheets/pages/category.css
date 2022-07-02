@@ -1,0 +1,211 @@
+/* 카테고리별 추천 광고상품 */
+body {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+}
+
+.container {
+    width: 1020px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    margin-top: 100px;
+    margin-bottom: 48px;
+}
+
+.logo-area a {
+    display: block;
+    width: 100%;
+    /* background-color: aquamarine; */
+}
+
+/* CategoryBest--Title */
+.categoryBest-title-area h3 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 115%;
+}
+
+.categoryBest-title-area h2 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 115%;
+}
+
+.categoryBest-title-area h2>span {
+    color: var(--color-blue-600);
+}
+
+/* CategoryBest--Category(common) */
+.category {
+    display: flex;
+    margin-top: 24px;
+    height: 634px;
+}
+
+.category-title-area {
+    width: 174px;
+    padding: 24px;
+}
+
+.category-title {
+    margin: 24px 0 0;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 115%;
+}
+.shortcut-btn {
+    margin: 8px 0 0;
+    color: var(--color-gray-700);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 120%;
+    background-image: url("../assets/icon/angle-right-default.svg");
+    background-repeat: no-repeat;
+    background-position: 56px;
+}
+.hotKeyword {
+    margin-top: 248px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 115%;
+}
+.hashtag-group p {
+    display: inline-flex;
+    flex-direction: column;
+}
+.hashtag {
+    margin: 0 0 12px;
+    padding: 6px 10px;
+    border: 1px solid var(--color-gray-400);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 120%;
+}
+.hashtag:last-child {
+    margin: 0 0 4px;
+}
+.carousel,
+.slide {
+    position: relative;
+}
+
+.slide-msg {
+    position: absolute;
+    left: 30px;
+    bottom: 58px;
+    width: 260px;
+    height: 90px;
+    text-align: center;
+    color: var(--color-white);
+}
+.slide-msg p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+}
+
+.slide-msg p:first-child {
+    margin: 19px 0 8px;
+    font-weight: 700;
+    font-size: 18px;
+}
+.indicator-group {
+    position: absolute;
+    left: 144px;
+    top: 597px;
+    display: flex;
+}
+.indicator {
+    margin-right: 8px;
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    background-color: var(--color-gray-600);
+}
+.indicator:first-child {
+    background-color: var(--color-gray-700);
+}
+.indicator:last-child {
+    margin-right: 0;
+}
+.product-subgroup {
+    display: flex;
+    padding: 9px 16px;
+    width: 528px;
+}
+.divider::before {
+    content: '';
+    display: block;
+    width: 528px;
+    height: 0.5px;
+    background-color: var(--color-gray-600);
+}
+.product-card {
+    width: 160px;
+    height: 300px;
+}
+.product-card > div {
+    display: inline-flex;
+}
+.product-name {
+    margin: 12px 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+}
+.product-price {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+}
+.product-price span {
+    font-weight: 700;
+    font-size: 18px;
+}
+.discount {
+    margin: 0 0 4px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    color: var(--color-red-500);
+}
+.delivery {
+    margin: 0;
+    margin-left: 6px;
+}
+/*  CategoryBest--Category(houseware) */
+.category_houseware {
+    border-top: 1px solid var(--color-brown-300);
+    border-bottom: 1px solid var(--color-brown-300);
+}
+.category_houseware .category-title,
+.category_houseware .hashtag {
+    color: var(--color-brown-300);
+}
+.category_houseware .slide-msg {
+    background-color: var(--color-brown-300);
+}
+
+/*  CategoryBest--Category(kitchenware) */
+.category_kitchenware {
+    border-top: 1px solid var(--color-green-700);
+    border-bottom: 1px solid var(--color-green-700);
+}
+.category_kitchenware .category-title,
+.category_kitchenware .hashtag {
+    color: var(--color-green-700);
+}
+.category_kitchenware .slide-msg {
+    background-color: var(--color-green-700);
+}
